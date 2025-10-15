@@ -1,4 +1,4 @@
-export type CollectionName = "blog" | "projects" | "talks";
+export type CollectionName = "blog" | "areasOfInvestments";
 
 
 export type GlobalSite = {
@@ -13,9 +13,9 @@ export type GlobalSite = {
 };
 
 export const GLOBAL: GlobalSite = {
-  title: "Astro Milidev",
+  title: "span.fund",
   description: "a minimalistic blog+portfolio Astro theme",
-  author: "John Doe",
+  author: "Tomasz Kowalczyk",
   authorPhotoSrc: "/johndoe.png",
   logo: {
     darkThemeSrc: "/logo/logo_dark.png",
@@ -30,14 +30,12 @@ type CollectionSite =  {
 
 type HomeSite =  {
   blogEntries?: number;
-  projectEntries?: number;
-  talkEntries?: number;
+  areasOfInvestmentsEntries?: number;
 }
 
 export const HOME: HomeSite = {
   blogEntries: 5,
-  projectEntries: 3,
-  talkEntries: 3,
+  areasOfInvestmentsEntries: 3,
 };
 
 type BlogSite = CollectionSite & {
@@ -55,11 +53,7 @@ export const BLOG: BlogSite = {
   },
 };
 
-export const PROJECTS: CollectionSite = {
-  pageSize: 10,
-};
-
-export const TALKS: CollectionSite = {
+export const AREAS_OF_INVESTMENTS: CollectionSite = {
   pageSize: 10,
 };
 

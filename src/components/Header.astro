@@ -7,11 +7,8 @@ import { GLOBAL } from "@consts";
 const anyBlogPosts =
   (await getFilteredCollectionEntries("blog")).entries.length > 0;
 
-const anyTalks =
-  (await getFilteredCollectionEntries("talks")).entries.length > 0;
-
-const anyProjects =
-  (await getFilteredCollectionEntries("projects")).entries.length > 0;
+const anyAreasOfInvestments =
+  (await getFilteredCollectionEntries("areasOfInvestments")).entries.length > 0;
 ---
 
 <header transition:persist>
@@ -30,8 +27,8 @@ const anyProjects =
         }
       </TextLink>
       <nav class="flex items-center gap-1 text-sm">
-        <TextLink href={resolvePath("/hire-me", Astro.url.pathname)}
-          >hire me</TextLink
+        <TextLink href={resolvePath("/about", Astro.url.pathname)}
+          >about</TextLink
         >
         {" "}
         {
@@ -45,21 +42,11 @@ const anyProjects =
           )
         }
         {
-          anyTalks && (
+          anyAreasOfInvestments && (
             <>
               <span>{`|`}</span>
-              <TextLink href={resolvePath("/talks", Astro.url.pathname)}>
-                talks
-              </TextLink>
-            </>
-          )
-        }
-        {
-          anyProjects && (
-            <>
-              <span>{`|`}</span>
-              <TextLink href={resolvePath("/projects", Astro.url.pathname)}>
-                projects
+              <TextLink href={resolvePath("/areasOfInvestments", Astro.url.pathname)}>
+                areas of investments
               </TextLink>
             </>
           )

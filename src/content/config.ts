@@ -13,7 +13,7 @@ const blog = defineCollection({
   }),
 });
 
-const projects = defineCollection({
+const areasOfInvestments = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
@@ -26,17 +26,4 @@ const projects = defineCollection({
   }),
 });
 
-const talks = defineCollection({
-  type: "content",
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date(),
-    lastUpdateDate: z.coerce.date().optional(),
-    description: z.string().optional(),
-    ogImage: z.string().optional(),
-    draft: z.boolean().optional(),
-    tags: z.array(z.string()).optional(),
-  }),
-});
-
-export const collections = { blog, projects, talks };
+export const collections = { blog, areasOfInvestments };
