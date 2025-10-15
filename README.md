@@ -1,35 +1,60 @@
-# Astro Milidev
+# Span Fund Website
 
-![Astro Milidev Banner](./public/projects/astro-milidev/astro-milidev-banner.png)
+A minimalistic portfolio and blog website built with Astro, Tailwind CSS, and TypeScript.
 
-<div style="text-align: center;">
+## Live Site
 
-  **[DEMO / LIVE PREVIEW](https://bartoszlenar.github.io/astro-milidev)**
+**[https://span.fund](https://span.fund)**
 
-</div>
+## Tech Stack
 
-## Info
+- **Framework**: Astro 5
+- **Styling**: Tailwind CSS 3
+- **Language**: TypeScript
+- **Content**: MDX
+- **Package Manager**: pnpm
 
-Astro Milidev is a minimalistic portfolio+blog [Astro](https://astro.build) theme.
+## Development
 
-It originates from [Trevor Lee](https://github.com/trevortylerlee)'s [Astro Micro](https://astro-micro.vercel.app/) theme, which is based on [Mark Horn](https://github.com/markhorn-dev)'s [Astro Nano](https://astro-nano-demo.vercel.app/) (after "nano" and "micro" comes "mili", hence the first part of the name).
+### Prerequisites
 
-Astro Milidev enhances the above codebases with a variety of features. I customized the original theme for my personal website and also refactored core parts of the code, making it more customizable and extensible. 
+- Node.js 18.20.8+
+- pnpm (required)
 
-The list of modifications is available in this post: [Everything new in Astro Milidev](https://bartoszlenar.github.io/astro-milidev/blog/everything-new-in-astro-milidev/). Another post [Getting started](https://bartoszlenar.github.io/astro-milidev/blog/getting-started/) explains the configuration process step by step. The code is available on [GitHub](https://github.com/bartoszlenar/astro-milidev).
+### Setup
 
-Enjoy!
+```bash
+# Install dependencies
+pnpm install
 
-## Changelog
+# Start development server
+pnpm dev
 
-The current version is v1.1.0
+# Build for production
+pnpm build
 
-Changelog is available [here](./CHANGELOG.md).
+# Preview production build
+pnpm preview
+```
 
-## Contributions
+### Configuration
 
-Any PRs are more than welcome. Please direct them to the `develop` branch.
+Update site metadata in `src/consts.ts`:
+- Site title and description
+- Author information
+- Contact details
+- Logo paths
+
+## Features
+
+- ✅ Responsive design
+- ✅ Dark/light theme toggle
+- ✅ Search functionality (PageFind)
+- ✅ RSS feed
+- ✅ SEO optimized
+- ✅ Accessibility compliant
+- ✅ Fast performance
 
 ## License
 
-MIT! 
+MIT

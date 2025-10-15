@@ -12,7 +12,7 @@ const { small } = Astro.props;
     {
         CONTACT.map((c, index) => (
             <>
-                <a href={c.href} target="_blank">
+                <a href={c.href} target="_blank" rel="noopener noreferrer" aria-label={`${c.displayAs ?? c.type} (opens in new tab)`}>
                     {c.displayAs ?? c.type}
                 </a>
                 <span class="mx-2">{index < CONTACT.length - 1 && " | "}</span>

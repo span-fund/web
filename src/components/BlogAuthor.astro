@@ -10,6 +10,7 @@ import Contact from "./Contact.astro";
     src={resolvePath(GLOBAL.authorPhotoSrc, Astro.url.pathname)}
     alt={GLOBAL.author}
     class="mr-8 h-24 w-24 rounded-full"
+    loading="lazy"
   />
 
   <div class="flex-grow">

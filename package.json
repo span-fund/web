@@ -26,9 +26,11 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
+    "only-allow": "^1.2.1",
     "pagefind": "^1.1.1",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.6"
-  }
+    "prettier-plugin-tailwindcss": "^0.7.0"
+  },
+  "packageManager": "pnpm@10.18.2+sha1.48588a2735db5f19ffe699240b59891cfac5f316"
 }

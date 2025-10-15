@@ -6,4 +6,4 @@ interface Props extends astroHTML.JSX.ImgHTMLAttributes {}
 const { src, ...rest } = Astro.props;
 ---
 
-<img src={resolvePath(src)} {...rest} />
+<img src={resolvePath(src)} loading="lazy" {...rest} />
